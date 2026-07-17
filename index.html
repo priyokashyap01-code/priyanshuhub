@@ -1,1 +1,224 @@
-<img src="profile.png" alt="Priyanshu" width="220" style="border-radius:50%;object-fit:cover;border:5px solid #38bdf8;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanshu JEE Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#081b29,#0f172a,#1e3a8a);
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text h3{
+font-size:26px;
+margin-bottom:20px;
+color:#94a3b8;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+.hero-image img{
+width:330px;
+height:330px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #38bdf8;
+box-shadow:0 0 40px #38bdf8;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin:40px 0;
+color:#38bdf8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:0 8% 80px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#1e293b;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:25px;
+color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">📚 Priyanshu JEE Hub</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#subjects">Subjects</a>
+<a href="#">Notes</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Priyanshu</span></h1>
+
+<h3>JEE Aspirant | Future Engineer</h3>
+
+<p>
+Welcome to my JEE learning website.
+Here you'll find Physics, Chemistry, Maths Notes,
+PYQs and Study Material in Hindi + English.
+</p>
+
+<a href="#subjects" class="btn">Start Learning</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="profile.png" alt="Priyanshu">
+
+</div>
+
+</section>
+
+<h1 class="section-title" id="subjects">Subjects</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>⚡ Physics</h2>
+<p>Complete Notes & PYQs</p>
+</div>
+
+<div class="card">
+<h2>🧪 Chemistry</h2>
+<p>Physical, Organic & Inorganic</p>
+</div>
+
+<div class="card">
+<h2>📐 Mathematics</h2>
+<p>Algebra, Calculus & Coordinate Geometry</p>
+</div>
+
+<div class="card">
+<h2>📝 Mock Tests</h2>
+<p>Practice Tests Coming Soon</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Priyanshu JEE Hub | Made by Priyanshu ❤️
+</footer>
+
+</body>
+</html>
