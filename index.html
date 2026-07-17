@@ -1,68 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Priyanshu's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanshu | Portfolio</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#0f172a;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#312e81);
 color:white;
-text-align:center;
 }
 
 nav{
-background:#1e293b;
-padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:20px;
-font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
 }
 
 .hero{
-padding:100px 20px;
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-button{
-padding:12px 25px;
-font-size:18px;
-border:none;
-border-radius:8px;
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
 background:#38bdf8;
-cursor:pointer;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
 }
 
-button:hover{
+.btn:hover{
 background:#0ea5e9;
+transform:scale(1.05);
 }
 </style>
-
 </head>
 
 <body>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<div class="logo">Priyanshu</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 </nav>
 
-<div class="hero">
+<section class="hero">
 
-<h1>Welcome Priyanshu 👋</h1>
+<div>
 
-<p>This is my first professional website.</p>
+<h1>Hello, I'm <span>Priyanshu</span></h1>
 
-<button onclick="alert('Welcome to my website!')">
-Click Me
-</button>
+<p>Future Engineer • Web Developer • JEE Aspirant</p>
+
+<a href="#" class="btn">Explore</a>
 
 </div>
+
+</section>
 
 </body>
 </html>
